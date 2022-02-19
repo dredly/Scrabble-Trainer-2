@@ -13,8 +13,12 @@ app.get('/', (req, res) => {
     res.render('index');
 })
 
-app.get('/play', (req, res) => {
-    res.render('play');
+app.get('/timed', (req, res) => {
+    res.render('timed');
+})
+
+app.get('/timed/play', (req, res) => {
+    res.render('playtimed');
 })
 
 app.listen(3000, () => {

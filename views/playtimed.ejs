@@ -1,0 +1,46 @@
+<%- layout('layouts/base') %>
+
+<div id="game-area">
+    <div id="timer-and-messages">
+        <h2 id="timer"></h2>
+        <div id="game-messages"></div>
+    </div>
+    <div id="game-info">
+        <table>
+            <tr>
+                <th>
+                    Round
+                </th>
+                <th>
+                    Score
+                </th>
+                <th>
+                    Random Seed
+                </th>
+            </tr>
+            <tr>
+                <td id="roundDisplay"></td>
+                <td id="scoreDisplay">0</td>
+                <td id="seedDisplay"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="tile-rack"></div>
+    <form id="seed-form" class="game-form">
+        <label for="use-seed">Use Random Seed</label>
+        <input type="checkbox" checked id="use-seed" name="isRandom">
+        <fieldset id="seed-selection" class="disabled" disabled>
+            <label for="choose-seed"></label>Enter a custom seed</label>
+            <input type="number" step=any name="chosenSeed" id="choose-seed">
+        </fieldset>
+        <button type="submit" class="button">Start</button>
+    </form>
+</div>
+<script src="/scripts/easytimer.min.js"></script>
+<script src="/scripts/dictSet.js"></script>
+<script src="/scripts/configure_game.js"></script>
+<script src="/scripts/initialise.js"></script>
+<script src="/scripts/main.js"></script>
+<script src="/scripts/makeLetters.js"></script>
+<script src="/scripts/tileRack.js"></script>
+<script src="/scripts/writeWords.js"></script>

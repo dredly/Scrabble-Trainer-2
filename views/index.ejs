@@ -1,29 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- layout('layouts/base') %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Scrabble Trainer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/styles.css">
-</head>
-
-<body>
-    <h1>Welcome to Scrabble Trainer</h1>
-    <div id="rules">
-        <p>You will have 1 minute to play 5 rounds, but you will score bonus points for finishing faster.</p>
-        <p>In each round, try to write the highest scoring word that you can.</p>
-        <p>If you write an invalid word, you will lose 5 points.</p>
-        <p>You do have the option to trade in all your letters, but it comes with a 50 point penalty, so only do it when
-            you can't write anything!</p>
-        <p>If you share your random seed with a friend, they can play with the same letters as you to see if they can do
-            better!</p>
-    </div>
-    <a href="/play"><button class="button">Play Game</button></a>
-</body>
-
-</html>
+<h1 class="centered-text">Welcome to Scrabble Trainer 2</h1>
+<div id="rules">
+    <p>In this new version of Scrabble Trainer, you can either play timed mode, where you get bonus points for playing
+        faster, or play with unlimited time and compare your results with a basic AI.</p>
+</div>
+<div class="button-group">
+    <a href="/timed"><button class="button">Timed</button></a>
+    <a href="#"><button class="button">Unlimited</button></a>
+    <a href="#"><button class="button">See Scores</button></a>
+</div>
