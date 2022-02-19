@@ -109,4 +109,3 @@ randomSeedCheck.addEventListener("click", () => {
 // Start the main "game loop" on submission of the random seed form
 seedForm.addEventListener("submit", e => handleStart(e));
 const gameMessages = document.querySelector('#game-messages');
-
